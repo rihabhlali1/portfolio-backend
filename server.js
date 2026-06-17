@@ -53,6 +53,3 @@ app.post('/api/contact', async (req, res) => {
 app.get('/api/stats', (req, res) => {
   res.json({ views, messagesCount: messages.length });
 });
-
-const PORT = 3000;
-app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
